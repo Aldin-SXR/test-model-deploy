@@ -25,6 +25,8 @@ ENV VIRTUAL_ENV=/var/www/html/env
 RUN python3 -m venv $VIRTUAL_ENV
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 RUN pip install nltk tensorflow
+RUN python -m nltk.downloader punkt stopwords omw-1.4 wordnet
+RUN cp -r /root/nltk_data /var/www/nltk_data
 
 EXPOSE 80
 EXPOSE 443
