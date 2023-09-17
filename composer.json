@@ -1,0 +1,17 @@
+{
+    "name": "aldin-sxr/mirza-model",
+    "autoload": {
+        "psr-4": {
+            "AldinSxr\\MirzaModel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aldin Kovačević",
+            "email": "aldin@salesseek.com"
+        }
+    ],
+    "require": {
+        "mikecao/flight": "^2.0"
+    }
+}
